@@ -8,4 +8,5 @@ import java.util.List;
 @Service
 public interface UserServer {
     List<User> getUserList();
+    String AddUser(User user);
 }
