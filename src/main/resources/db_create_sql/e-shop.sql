@@ -24,7 +24,7 @@ CREATE TABLE `shop-cart` (
   `product_id` int DEFAULT NULL,
   `user_id` int DEFAULT NULL,
   `quantity` int DEFAULT NULL,
-  `create_time` timestamp NULL DEFAULT NULL ON UPDATE CURRENT_TIMESTAMP,
+  `create_time` timestamp NULL DEFAULT NULL CURRENT_TIMESTAMP,
   `update_time` timestamp NULL DEFAULT NULL ON UPDATE CURRENT_TIMESTAMP,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb3;
@@ -44,10 +44,10 @@ CREATE TABLE `shop-order` (
   `order_status` int DEFAULT NULL,
   `postage` int DEFAULT NULL,
   `payment_type` int DEFAULT NULL,
-  `pay_time` timestamp NULL DEFAULT NULL ON UPDATE CURRENT_TIMESTAMP,
-  `delivery_time` timestamp NULL DEFAULT NULL ON UPDATE CURRENT_TIMESTAMP,
-  `end_time` timestamp NULL DEFAULT NULL ON UPDATE CURRENT_TIMESTAMP,
-  `create_time` timestamp NULL DEFAULT NULL ON UPDATE CURRENT_TIMESTAMP,
+  `pay_time` timestamp NULL DEFAULT NULL CURRENT_TIMESTAMP,
+  `delivery_time` timestamp NULL DEFAULT NULL CURRENT_TIMESTAMP,
+  `end_time` timestamp NULL DEFAULT NULL CURRENT_TIMESTAMP,
+  `create_time` timestamp NULL DEFAULT NULL CURRENT_TIMESTAMP,
   `update_time` timestamp NULL DEFAULT NULL ON UPDATE CURRENT_TIMESTAMP,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb3;
@@ -65,7 +65,7 @@ CREATE TABLE `shop-order-item` (
   `unit_price` int DEFAULT NULL,
   `quantity` int DEFAULT NULL,
   `total_price` int DEFAULT NULL,
-  `create_time` timestamp NULL DEFAULT NULL ON UPDATE CURRENT_TIMESTAMP,
+  `create_time` timestamp NULL DEFAULT NULL CURRENT_TIMESTAMP,
   `update_time` timestamp NULL DEFAULT NULL ON UPDATE CURRENT_TIMESTAMP,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb3;
@@ -83,7 +83,7 @@ CREATE TABLE `shop-product` (
   `price` int DEFAULT NULL,
   `stock` int DEFAULT NULL,
   `status` int DEFAULT NULL,
-  `create_time` timestamp NULL DEFAULT NULL ON UPDATE CURRENT_TIMESTAMP,
+  `create_time` timestamp NULL DEFAULT NULL CURRENT_TIMESTAMP,
   `update_time` timestamp NULL DEFAULT NULL ON UPDATE CURRENT_TIMESTAMP,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb3;
@@ -97,7 +97,7 @@ CREATE TABLE `shop-user` (
   `username` varchar(32) DEFAULT NULL COMMENT '用户名',
   `password` varchar(50) DEFAULT NULL,
   `role` int(4) unsigned zerofill DEFAULT NULL,
-  `create_time` timestamp NULL DEFAULT NULL ON UPDATE CURRENT_TIMESTAMP,
+  `create_time` timestamp NULL DEFAULT NULL CURRENT_TIMESTAMP,
   `update_time` timestamp NULL DEFAULT NULL ON UPDATE CURRENT_TIMESTAMP,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb3 COMMENT='用户名';
