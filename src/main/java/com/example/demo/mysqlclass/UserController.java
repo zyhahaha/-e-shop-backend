@@ -22,7 +22,7 @@ public class UserController {
         return userServer.getUserList();
     }
 
-    @PostMapping("/adduser")
+    @PostMapping("/register")
     public String addUser(User user)
     {
         return userServer.AddUser(user);
