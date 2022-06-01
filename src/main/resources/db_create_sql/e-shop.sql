@@ -96,6 +96,8 @@ CREATE TABLE `shop-user` (
   `id` int NOT NULL AUTO_INCREMENT,
   `username` varchar(32) DEFAULT NULL COMMENT '用户名',
   `password` varchar(50) DEFAULT NULL,
+  `password_salt` varchar(50) DEFAULT NULL,
+  `mobile` varchar(15) DEFAULT NULL,
   `role` int(4) unsigned zerofill DEFAULT NULL,
   `create_time` timestamp NULL DEFAULT NULL CURRENT_TIMESTAMP,
   `update_time` timestamp NULL DEFAULT NULL ON UPDATE CURRENT_TIMESTAMP,
@@ -105,12 +107,12 @@ CREATE TABLE `shop-user` (
 -- ----------------------------
 -- Table structure for usertable
 -- ----------------------------
-DROP TABLE IF EXISTS `usertable`;
-CREATE TABLE `usertable` (
-  `username` varchar(255) DEFAULT NULL,
-  `userpassword` varchar(255) DEFAULT NULL,
-  `age` int DEFAULT NULL,
-  `sex` varchar(255) DEFAULT NULL,
-  `user_id` int NOT NULL AUTO_INCREMENT,
-  PRIMARY KEY (`user_id`)
-) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8mb3;
+-- DROP TABLE IF EXISTS `usertable`;
+-- CREATE TABLE `usertable` (
+--   `username` varchar(255) DEFAULT NULL,
+--   `userpassword` varchar(255) DEFAULT NULL,
+--   `age` int DEFAULT NULL,
+--   `sex` varchar(255) DEFAULT NULL,
+--   `user_id` int NOT NULL AUTO_INCREMENT,
+--   PRIMARY KEY (`user_id`)
+-- ) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8mb3;
