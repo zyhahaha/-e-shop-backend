@@ -7,27 +7,37 @@ import org.springframework.web.bind.annotation.*;
 public class ProductController {
     @PostMapping("/create")
     public String create() {
+
+
         return "create successful";
     }
 
     @PostMapping("/update")
     public String update() {
+
+
         return "update successful";
     }
 
     @DeleteMapping ("/delete")
     public String delete() {
+
+
         return "delete successful";
     }
 
 
     @GetMapping("/list")
     public String getList() {
+
+
         return "get list successful";
     }
 
     @GetMapping("/info")
     public String getInfo() {
+
+
         return "get info successful";
     }
 }
