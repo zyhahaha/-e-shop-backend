@@ -11,31 +11,31 @@ public class User {
     }
 
     public String getUserpassword() {
-        return userpassword;
+        return password;
     }
 
     public void setUserpassword(String userpassword) {
-        this.userpassword = userpassword;
+        this.password = userpassword;
     }
 
-    public int getAge() {
-        return age;
-    }
+    // public int getAge() {
+    //     return age;
+    // }
 
-    public void setAge(int age) {
-        this.age = age;
-    }
+    // public void setAge(int age) {
+    //     this.age = age;
+    // }
 
-    public String getSex() {
-        return sex;
-    }
+    // public String getSex() {
+    //     return sex;
+    // }
 
-    public void setSex(String sex) {
-        this.sex = sex;
-    }
+    // public void setSex(String sex) {
+    //     this.sex = sex;
+    // }
 
     public String username;
-    public String userpassword;
-    public  int age;
-    public  String sex;
+    public String password;
+    public  int mobile;
+    public  String role;
 }
