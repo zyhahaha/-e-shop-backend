@@ -1,7 +1,7 @@
-package com.example.demo.mysqlclass;
+package com.example.demo.api.v1.user;
 
-import com.example.demo.mysqlclass.model.User;
-import com.example.demo.mysqlclass.serverimpl.UserServerimpl;
+import com.example.demo.api.v1.user.model.User;
+import com.example.demo.api.v1.user.serverimpl.UserServerimpl;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;

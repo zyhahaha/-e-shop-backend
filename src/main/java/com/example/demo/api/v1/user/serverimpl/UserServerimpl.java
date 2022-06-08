@@ -1,8 +1,8 @@
-package com.example.demo.mysqlclass.serverimpl;
+package com.example.demo.api.v1.user.serverimpl;
 
-import com.example.demo.mysqlclass.UserMapper;
-import com.example.demo.mysqlclass.UserServer;
-import com.example.demo.mysqlclass.model.User;
+import com.example.demo.api.v1.user.UserMapper;
+import com.example.demo.api.v1.user.UserServer;
+import com.example.demo.api.v1.user.model.User;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;

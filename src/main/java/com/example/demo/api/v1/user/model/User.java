@@ -1,4 +1,4 @@
-package com.example.demo.mysqlclass.model;
+package com.example.demo.api.v1.user.model;
 
 public class User {
 
